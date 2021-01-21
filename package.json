@@ -10,7 +10,6 @@
     "pretty": "prettier --write '**/*.{js,json}' '!node_modules/**'",
     "postpretty": "npm lint --fix",
     "test": "nyc --reporter=html --reporter=text --reporter=lcov mocha -r @babel/register"
-    
   },
   "dependencies": {
     "@babel/cli": "^7.12.10",
