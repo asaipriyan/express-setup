@@ -1,0 +1,66 @@
+\l
+\d
+\du
+ CREATE USER priyan WITH CREATEDB LOGIN ENCRYPTED PASSWORD 'user@123$';
+CREATE DATABASE priyan;
+CREATE DATABASE codeinghub;
+\d
+\du
+\l
+GRANT ALL PRIVILEGES ON DATABASE codeinghub TO priyan;
+\q
+\l
+DROP DATABASE asaipriyan
+\l
+DROP DATABASE asaipriyan;
+DROP DATABASE asaipriyan;
+\l
+\q
+\l
+DROP DATABASE codeinghub;
+\q
+\l
+\c codeinghub
+CREATE TABLE person (
+id INT,
+firstName VARCHAR(50),
+lastName VARCHAR(50),
+gender VARCHAR(50),
+dob DATE);
+\d
+\d person
+drop table person
+drop table person;
+drop table person;
+CREATE TABLE person (
+id BIGSERIAL NOT NULL PRIMARY KEY,
+firstName VARCHAR(50) NOT NULL,
+lastName VARCHAR(50) NOT NULL,
+gender VARCHAR(5) NOT NULL,
+dob DATE NOT NULL );
+\d
+\b person
+\d person
+\d person
+INSERT INTO person (
+firstName,
+lastName,
+gender,
+dob)
+VALUES('ASAI','PRIYAN','MALE',DATE '1997-02-19');
+SELECT * FROM person;
+\l
+CREATE DATABASE fmapp
+;
+\q
+\l
+\c codeinghub
+select version();
+\d
+\d person
+\q
+\d
+\q
+\l
+\d codeinghub
+\s codeinghub
